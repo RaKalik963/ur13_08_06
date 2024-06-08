@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
 	int x, y;
-	int* px = &x, * py = &y;
+	int* px = new int, * py = new int;
 	cout << "enter first num ";
 	cin >> x;
 	cout << "enter second num ";
@@ -18,15 +18,15 @@ int main()
 	*py = y;
 	if (px > py)
 	{
-		cout << " first num is bigger" << endl;
+		cout << " first number is bigger" << endl;
 	}
-	else if (px == py)
+	else if (px < py)
 	{
-		cout << "your numbers are equal" << endl;
+		cout << "second number is bigger" << endl;
 	}
 	else
 	{
-		cout << "second num is bigger" << endl;
+		cout << "your numbers are equal" << endl;
 	}
 	delete px;
 	delete py;
