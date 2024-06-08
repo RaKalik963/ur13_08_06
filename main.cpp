@@ -16,11 +16,11 @@ int main()
 
 	*px = x;
 	*py = y;
-	if (px > py)
+	if (*px > *py)
 	{
 		cout << " first number is bigger" << endl;
 	}
-	else if (px < py)
+	else if (*px < *py)
 	{
 		cout << "second number is bigger" << endl;
 	}
